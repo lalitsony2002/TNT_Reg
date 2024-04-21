@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">93,679</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TNT_Testing.Login_TC1</td><td><a href="#m0">AoiTestClick</a></td><td rowspan="1">1712917684172</td><td rowspan="1">53959</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">TNT_Testing.Login_TC1</td><td><a href="#m1">VerifyBarcode</a></td><td rowspan="1">1712917676203</td><td rowspan="1">7307</td></tr><tr class="passedeven"><td><a href="#m2">clickingShopFloor</a></td><td rowspan="1">1712917656296</td><td rowspan="1">150</td></tr><tr class="passedeven"><td><a href="#m3">generateBarcode</a></td><td rowspan="1">1712917675142</td><td rowspan="1">1060</td></tr><tr class="passedeven"><td><a href="#m4">labelPrintObject</a></td><td rowspan="1">1712917656447</td><td rowspan="1">5295</td></tr><tr class="passedeven"><td><a href="#m5">logOutFromAPP</a></td><td rowspan="1">1712917683511</td><td rowspan="1">659</td></tr><tr class="passedeven"><td><a href="#m6">loggedInUserDetails</a></td><td rowspan="1">1712917656194</td><td rowspan="1">100</td></tr><tr class="passedeven"><td><a href="#m7">loginTest</a></td><td rowspan="1">1712917650678</td><td rowspan="1">5477</td></tr><tr class="passedeven"><td><a href="#m8">loginWithoutPassword</a></td><td rowspan="1">1712917648931</td><td rowspan="1">1745</td></tr><tr class="passedeven"><td><a href="#m9">loginWithoutUserAndPassword</a></td><td rowspan="1">1712917648758</td><td rowspan="1">166</td></tr><tr class="passedeven"><td><a href="#m10">quantityPrinting</a></td><td rowspan="1">1712917672556</td><td rowspan="1">2585</td></tr><tr class="passedeven"><td><a href="#m11">selectingOrder</a></td><td rowspan="1">1712917666192</td><td rowspan="1">6363</td></tr><tr class="passedeven"><td><a href="#m12">selectingProduct</a></td><td rowspan="1">1712917661745</td><td rowspan="1">4446</td></tr><tr class="passedeven"><td><a href="#m13">welcomeMessage</a></td><td rowspan="1">1712917656160</td><td rowspan="1">32</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">TNT_Testing.Login_TC1#AoiTestClick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.20.10.149, port 1433 has failed. Error: &quot;Connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.&quot;.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:237)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:288)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2519)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:777)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3300)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2950)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:2790)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1663)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1064)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at TNT_Testing.SF_AOI_Test.sqlStatus(SF_AOI_Test.java:48)
+	at TNT_Testing.SF_AOI_Test.errorCode(SF_AOI_Test.java:141)
+	at TNT_Testing.SF_AOI_Test.scanPCBTextBox(SF_AOI_Test.java:86)
+	at TNT_Testing.SF_AOI_Test.selectProductionLine(SF_AOI_Test.java:99)
+	at TNT_Testing.SF_AOI_Test.errorCode(SF_AOI_Test.java:135)
+	at TNT_Testing.SF_AOI_Test.scanPCBTextBox(SF_AOI_Test.java:86)
+	at TNT_Testing.SF_AOI_Test.aoiTestClick(SF_AOI_Test.java:71)
+	at TNT_Testing.SF_AOI_Test.errorCode(SF_AOI_Test.java:130)
+	at TNT_Testing.SF_AOI_Test.scanPCBTextBox(SF_AOI_Test.java:86)
+	at TNT_Testing.SF_AOI_Test.aoiTestClick(SF_AOI_Test.java:71)
+	at TNT_Testing.Login_TC1.AoiTestClick(Login_TC1.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TNT_Testing.Login_TC1#VerifyBarcode</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Barcode Verified. </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TNT_Testing.Login_TC1#clickingShopFloor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TNT_Testing.Login_TC1#generateBarcode</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Current Barcode Is Generated999002000041</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TNT_Testing.Login_TC1#labelPrintObject</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">PCB Label Print and Verification Station Screen Opened </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TNT_Testing.Login_TC1#logOutFromAPP</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">User Successfully Logout From the APP </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TNT_Testing.Login_TC1#loggedInUserDetails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged In User Is testAdmin</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TNT_Testing.Login_TC1#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TNT_Testing.Login_TC1#loginWithoutPassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Without PASSWORD Not able to login into APP, Password is required.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TNT_Testing.Login_TC1#loginWithoutUserAndPassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Without USER ID and PASSWORD Not able to login into APP, User Name is required.
+Password is required.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TNT_Testing.Login_TC1#quantityPrinting</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Input Quantity Printer. 1</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TNT_Testing.Login_TC1#selectingOrder</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Selected Order Is 999002T</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">TNT_Testing.Login_TC1#selectingProduct</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Product Is Selected As OTT LEAP S2</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">TNT_Testing.Login_TC1#welcomeMessage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">User Logged In Successfully In APP</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="TNT_Testing.Login_TC1">
+				<methods>
+					<include name="beforeTest" />
+					<include name="loginTest" />
+					<include name="welcomeMessage" />
+					<include name="loggedInUserDetails" />
+					<include name="clickingShopFloor" /> 
+					<include name="loginWithoutUserAndPassword" />
+					<include name="loginWithoutPassword" /> 
+					<include name="logOutFromAPP" /> 
+					<include name="labelPrintObject" /> 
+					<include name="selectingPrinter" /> 
+					<include name="selectingProduct" /> 
+					<include name="selectingOrder" /> 
+					<include name="quantityPrinting" />
+					<include name="generateBarcode" />
+					<include name="VerifyBarcode" />
+					<include name="AoiTestClick" />
+					<exclude name="sfAssemblyObject" />
+					
+					
+				</methods>
+			</class>
+			<class name="TNT_Testing.Login_TC1">
+				<methods>
+					<include name="clickingShopFloor" /> 
+					
+					
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
+		
+</suite> <!-- Suite -->
